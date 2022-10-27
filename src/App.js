@@ -9,12 +9,16 @@ function App() {
   return (
     <div className="App">
       
+
+{/* Input Text Section */}
+
+      <div className="input-section">
+
       <div className="title">
           <h1>NoteTaker!</h1>
       </div>
+{/* Input Title Text Box */}
 
-      <div className="input-section">
-        
         <input className="title-input" 
           type="text" 
           value={title} 
@@ -55,6 +59,7 @@ function App() {
       <div className='notes-section'>
       
 {/* Display Notes */}
+      
       {notes.map((note) => (
         <div className='note'>
           <h3 className='note-title'>{note[0]}</h3>
