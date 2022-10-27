@@ -2,21 +2,38 @@
   text-align: center;
 }
 
+.title {
+  margin-bottom: 0;
+}
+
+.title-input {
+  text-align: center;
+  margin: 0.5rem;
+  padding: 10px;
+}
+
 .input-section{
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
 
+
+.input-text{
+  margin: 0.5rem;
+  padding: 10px;
+  text-align: center;
 }
 
 .input-button{
   margin: 0.5rem;
   background-color: #d8b5de;
   border-radius: 10%;
-  padding: 10px;
-}
-
-.input-text{
-  margin: 0.5rem;
-  padding: 10px;
+  padding: 1rem;
+  max-width: 5rem;
+  align-self: center;
 }
 
 .notes-section {
