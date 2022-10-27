@@ -41,7 +41,8 @@ function App() {
           type="button" 
           value="Save" 
           onClick={() => {
-            setNotes([...notes, text]);
+            setNotes([...notes, [title, text]]);
+            setTitle("Write the title here!")
             setText("Write something here!")
           }}
         ></input>
@@ -56,8 +57,8 @@ function App() {
 {/* Display Notes */}
       {notes.map((note) => (
         <div className='note'>
-          <p className='note-text'>{note}</p>
-
+          <h3 className='note-title'>{note[0]}</h3>
+          <p className='note-text'>{note[1]}</p>
         </div>
       ))}
 
