@@ -3,28 +3,39 @@ import React from 'react'
 
 function App() {
 
-  const [text, setText] = React.useState("New Todo!")
+  const [text, setText] = React.useState("Write new text here!")
   const [notes, setNotes] = React.useState([])
 
   return (
     <div className="App">
+      
+      <div className="input-section">
 
-      <input type="button" onClick={() => {
-        setNotes([...notes, text]);
-        setText("")
-        }}
-      ></input>
+        <input className="input-button" type="button" value="Save" onClick={() => {
+          setNotes([...notes, text]);
+          setText("Write something here!")
+          }}
+        ></input>
 
-      <input type="text" value={text} 
-        onChange={(event) => {
-          const newValue = event.target.value;
-          setText(newValue);
-        }}
-      ></input>
+        <input className="input-text" type="text" value={text} 
+          onChange={(event) => {
+            const newValue = event.target.value;
+            setText(newValue);
+          }}
+        ></input>
+      
+      </div>
+
+      <div className='notes-section'>
 
       {notes.map((note) => (
-        <h3>{note}</h3>
+        <div className='note'>
+          <p className='note-text'>{note}</p>
+
+        </div>
       ))}
+
+      </div>
 
     </div>
   );
