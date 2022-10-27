@@ -9,14 +9,14 @@ function App() {
   return (
     <div className="App">
       
+      <div className="title">
+          <h1>NoteTaker!</h1>
+      </div>
 
 {/* Input Text Section */}
 
       <div className="input-section">
 
-      <div className="title">
-          <h1>NoteTaker!</h1>
-      </div>
 {/* Input Title Text Box */}
 
         <input className="title-input" 
@@ -51,7 +51,6 @@ function App() {
           }}
         ></input>
 
-      
       </div>
       
 {/* Notes Section */}
