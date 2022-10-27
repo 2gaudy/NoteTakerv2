@@ -10,6 +10,9 @@ function App() {
     <div className="App">
       
       <div className="input-section">
+        <div className="title">
+          <h1>NoteTaker!</h1>
+        </div>
 
         <input className="input-button" type="button" value="Save" onClick={() => {
           setNotes([...notes, text]);
